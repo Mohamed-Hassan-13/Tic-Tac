@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+transition: all .4s;
+}
+
+ .contant{
+display: flex;
+flex-direction: column;
+gap: 10px;
+color: white;
+transition: all .3s;
+
+
+
+.show{
+    background-color:black ;
+    height: 90px;
+    font-size: 33px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+transition: all .4s;
+text-shadow: 0 0 40px white ;
+}
+
+    .row{
+
+display: flex;
+flex-direction: row;
+gap: 10px;
+
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color:black;
+            cursor: pointer;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+transition: all .4s;
+
+        }
+    }
+}
+
+button{
+    width: 150px;
+    line-height: 40px;
+    position: absolute;
+bottom: 0px;
+left: 50%;
+transform: translate(-50%,-50%);
+        background-color: blue;
+        color: white;
+        border: 0;
+        cursor: pointer;
+        font-size: 25px;
+    border: 2px solid transparent;
+transition: all .4s;
+}
+
+
+
+.them{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    right: 35px;
+    top: 70px;
+    border-radius: 20px;
+    padding: 2px;
+box-shadow: 0 0 10px 0 black;
+cursor: pointer;
+background-color: white;
+    .square{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: black;
+        cursor: pointer;
+        transition: all .06s;
+    }
+    .active{
+        margin-left: 39px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .them{
+        top: 5px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+}
+
